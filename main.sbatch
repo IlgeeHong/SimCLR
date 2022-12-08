@@ -20,7 +20,7 @@ module load python
 module load cuda/11.1
 source activate pytorch_env1  
 
-cd $SCRATCH/$USER/TTIC-final
+cd $SCRATCH/$USER/SimCLR
 echo $1
 echo $2
 python3 run.py
