@@ -27,7 +27,7 @@ def get_cifar10_data_loaders(download, shuffle=False, batch_size=256):
 
 model = torchvision.models.resnet18(pretrained=False, num_classes=10).to(device)
 
-checkpoint = torch.load('/scratch/midway3/ilgee/SimCLR/runs/Dec08_11-48-11_midway3-0280.rcc.local/checkpoint_0200.pth.tar', map_location=device)
+checkpoint = torch.load('/scratch/midway3/ilgee/SimCLR/runs/Dec08_11-56-39_midway3-0277.rcc.local/checkpoint_0200.pth.tar', map_location=device)
 state_dict = checkpoint['state_dict']
 
 for k in list(state_dict.keys()):
